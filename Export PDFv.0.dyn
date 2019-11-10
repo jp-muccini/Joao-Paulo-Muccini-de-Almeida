@@ -1,0 +1,93 @@
+<Workspace Version="1.3.4.6666" X="362.470122446033" Y="-5.84841102521705" zoom="0.48463260913902" ScaleFactor="1" Name="Home" Description="" RunType="Automatic" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="a08178e5-160e-4737-9ed8-653ba567cbb3" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Print PDF" x="558.758500308113" y="508.089083764967" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="True" />
+      <PortInfo index="3" default="False" />
+      <PortInfo index="4" default="False" />
+      <PortInfo index="5" default="False" />
+      <PortInfo index="6" default="True" />
+      <ID value="d2242065-8e76-4bf6-ab0d-9cf942ba194f" />
+      <Name value="Print PDF" />
+      <Description value="This node will allow you to initiate a printing routine in revit from a set of views/sheets, printer name, print settings and print range. " />
+      <Inputs>
+        <Input value="Views" />
+        <Input value="PrintRange" />
+        <Input value="CombinedFile" />
+        <Input value="PrinterName" />
+        <Input value="PrintSettings" />
+        <Input value="FilePath" />
+        <Input value="RunIt" />
+      </Inputs>
+      <Outputs>
+        <Output value="OUT" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <archilabUI.ViewSetUi guid="96b14861-b9eb-43fa-9594-49ad66a2d396" type="archilabUI.ViewSetUi" nickname="View Sets" x="-331.61887147554" y="81.1572996559318" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="13:Tender" />
+    <Dynamo.Graph.Nodes.CustomNodes.Function guid="6c983cf5-e9b5-4c39-9960-05c5250b1a54" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Get Views from View Set" x="-77.5563366562012" y="82.9355091502875" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+      <ID value="018628e6-7bd7-40b6-9255-e49d2291097c" />
+      <Name value="Get Views from View Set" />
+      <Description value="This node will take a name of a view set and return views/sheet elements contained in it. " />
+      <Inputs>
+        <Input value="ViewSet" />
+      </Inputs>
+      <Outputs>
+        <Output value="Views" />
+      </Outputs>
+    </Dynamo.Graph.Nodes.CustomNodes.Function>
+    <CoreNodeModels.Watch guid="a228234d-9554-4a2b-9995-1d026f2d926b" type="CoreNodeModels.Watch" nickname="Watch" x="204.164066461102" y="86.0475263196317" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <CoreNodeModels.Input.BoolSelector guid="d62e6eac-a369-4325-bc81-c4abfc3b922f" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="-128.935737070317" y="491.897771920711" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Boolean>True</System.Boolean>
+    </CoreNodeModels.Input.BoolSelector>
+    <CoreNodeModels.Input.BoolSelector guid="27a3d8c5-8f4f-4c8f-ad8d-be5b4211cb9d" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="48.2879296710157" y="843.612102603164" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Boolean>True</System.Boolean>
+    </CoreNodeModels.Input.BoolSelector>
+    <archilabUI.PrintSettingUi guid="902a2844-bb79-490b-a586-be568af2da81" type="archilabUI.PrintSettingUi" nickname="Print Settings" x="-28.1178390325543" y="739.084273965813" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="4:HJL_A1_PDF - Landscape" />
+    <archilabUI.PrintRangeUi guid="d879f8b9-4e1b-4925-8417-076d97fbf90d" type="archilabUI.PrintRangeUi" nickname="Print Range" x="-51.1635317518662" y="387.637459996303" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="1:Select" />
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="3af73b22-1689-4120-b80f-8df4da4ea377" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="-6" y="642" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;Soda PDF Desktop 11&quot;;" ShouldFocus="false" />
+    <CoreNodeModels.Watch guid="828dd60c-c814-421b-b5fb-30c6f7b53b26" type="CoreNodeModels.Watch" nickname="Watch" x="894.324688071711" y="551.411006043129" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <CoreNodeModels.Input.Directory guid="901aff7d-14cc-4ddc-93aa-9904e7ae634d" type="CoreNodeModels.Input.Directory" nickname="Directory Path" x="-861.623138951526" y="145.890841166313" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>C:\Users\jpmuc\OneDrive\Área de Trabalho\WIP</System.String>
+      <HintPath>C:\Users\jpmuc\OneDrive\Área de Trabalho\WIP</HintPath>
+    </CoreNodeModels.Input.Directory>
+    <CoreNodeModels.Watch guid="425c41a1-20e1-4b2d-b03a-eab745a8979e" type="CoreNodeModels.Watch" nickname="Watch" x="-126.780621909358" y="206.016467324412" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <CoreNodeModels.Input.DirectoryObject guid="e543221e-1cb7-46e2-bc6f-57addfac3870" type="CoreNodeModels.Input.DirectoryObject" nickname="Directory.FromPath" x="-589.537578736279" y="187.162737751076" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Input.DirectoryObject>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="565a6c20-127d-4a0b-9ae4-0c04d853584a" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Directory.Contents" x="-412.28946639434" y="196.883231438207" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.IO.Directory.Contents@var,string">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="True" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="62ca4faf-3320-4c8c-85ef-be3641f52780" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="-597" y="357" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;*.rvt&quot;;" ShouldFocus="false" />
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="a08178e5-160e-4737-9ed8-653ba567cbb3" start_index="0" end="828dd60c-c814-421b-b5fb-30c6f7b53b26" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="96b14861-b9eb-43fa-9594-49ad66a2d396" start_index="0" end="6c983cf5-e9b5-4c39-9960-05c5250b1a54" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="6c983cf5-e9b5-4c39-9960-05c5250b1a54" start_index="0" end="a228234d-9554-4a2b-9995-1d026f2d926b" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="a228234d-9554-4a2b-9995-1d026f2d926b" start_index="0" end="a08178e5-160e-4737-9ed8-653ba567cbb3" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="d62e6eac-a369-4325-bc81-c4abfc3b922f" start_index="0" end="a08178e5-160e-4737-9ed8-653ba567cbb3" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="27a3d8c5-8f4f-4c8f-ad8d-be5b4211cb9d" start_index="0" end="a08178e5-160e-4737-9ed8-653ba567cbb3" end_index="6" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="902a2844-bb79-490b-a586-be568af2da81" start_index="0" end="a08178e5-160e-4737-9ed8-653ba567cbb3" end_index="4" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="d879f8b9-4e1b-4925-8417-076d97fbf90d" start_index="0" end="a08178e5-160e-4737-9ed8-653ba567cbb3" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="3af73b22-1689-4120-b80f-8df4da4ea377" start_index="0" end="a08178e5-160e-4737-9ed8-653ba567cbb3" end_index="3" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="901aff7d-14cc-4ddc-93aa-9904e7ae634d" start_index="0" end="e543221e-1cb7-46e2-bc6f-57addfac3870" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="e543221e-1cb7-46e2-bc6f-57addfac3870" start_index="0" end="565a6c20-127d-4a0b-9ae4-0c04d853584a" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="565a6c20-127d-4a0b-9ae4-0c04d853584a" start_index="0" end="425c41a1-20e1-4b2d-b03a-eab745a8979e" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="62ca4faf-3320-4c8c-85ef-be3641f52780" start_index="0" end="565a6c20-127d-4a0b-9ae4-0c04d853584a" end_index="1" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations />
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-17" eyeY="24" eyeZ="50" lookX="12" lookY="-13" lookZ="-58" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>
